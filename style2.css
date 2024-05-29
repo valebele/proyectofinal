@@ -29,13 +29,13 @@ html {
 	text-align: center;
 	font-weight: 500;
 	font-size: 3rem;
+	color: #000;
 }
 
 /* ********************************** */
 /*               HEADER               */
 /* ********************************** */
 .container-hero {
-	background-color: var(--background-color);
 }
 
 .hero {
@@ -335,7 +335,7 @@ html {
 
 .category-expreso {
 	background-image: linear-gradient(#00000080, #00000080),
-		url('img2.jpg/postre.jpeg');
+		url('sandwich/grill\ de\ pollo\ y\ queso.jpeg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -369,11 +369,11 @@ html {
 	color: var(--primary-color);
 }
 
+/*populares*/
 .posicion{
-	padding-left: 155px;
+padding-top: 25px;
 	display: grid;
-	grid-template: repeat(4, 300px)/repeat(4,260px);
-  
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
   
   h1{
@@ -384,9 +384,9 @@ html {
   }
   
   .card {
+	padding-top: 50px;
 	align-items: center;
 	border: 1px solid #000000;
-	padding-top: 50px;
 	padding: 10px;
 	text-align: center;
 	width: 200px;
@@ -424,6 +424,7 @@ html {
 /*               GALLERY              */
 /* ********************************** */
 .gallery {
+padding-top: 300px;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: repeat(2, 30rem);
@@ -442,128 +443,15 @@ html {
 	grid-row: 1/3;
 }
 
-/* ********************************** */
-/*              SPECIALS              */
-/* ********************************** */
-.specials {
-	display: flex;
-	flex-direction: column;
-	gap: 2rem;
-	margin-bottom: 3rem;
-}
 
-/* ********************************** */
-/*                BLOGS               */
-/* ********************************** */
-.blogs {
-	display: flex;
-	flex-direction: column;
-	gap: 2rem;
-}
 
-.container-blogs {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 3rem;
-}
-
-.card-blog {
-	display: flex;
-	flex-direction: column;
-	gap: 2rem;
-}
-
-.card-blog .container-img {
-	border-radius: 2rem;
-	cursor: pointer;
-	position: relative;
-	overflow: hidden;
-}
-
-.button-group-blog {
-	position: absolute;
-	bottom: 1.5rem;
-	right: -2.5rem;
-
-	display: flex;
-	gap: 0.7rem;
-	z-index: -1;
-	transition: all 0.3s ease;
-}
-
-.card-blog:hover .button-group-blog {
-	z-index: 0;
-	right: 1.5rem;
-}
-
-.button-group-blog span {
-	background-color: #fff;
-	padding: 1rem;
-	border-radius: 50%;
-	transition: all 0.4s ease;
-
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.button-group-blog span i {
-	font-size: 1.3rem;
-}
-
-.button-group-blog span:hover {
-	background-color: var(--primary-color);
-}
-
-.button-group-blog span:hover i {
-	color: #fff;
-}
-
-.content-blog h3 {
-	font-size: 1.8rem;
-	margin-bottom: 1.7rem;
-	color: var(--dark-color);
-	font-weight: 500;
-}
-
-.content-blog h3:hover {
-	color: var(--primary-color);
-	cursor: pointer;
-}
-
-.content-blog p {
-	margin-top: 1rem;
-	font-size: 1.4rem;
-	color: #777;
-}
-
-.content-blog span {
-	color: var(--primary-color);
-	font-size: 1.3rem;
-}
-
-.btn-read-more {
-	padding: 1rem 3rem;
-	background-color: var(--primary-color);
-	color: #fff;
-	text-transform: uppercase;
-	font-size: 1.4rem;
-	border-radius: 2rem;
-	margin: 3rem 0 5rem;
-	display: inline-block;
-	cursor: pointer;
-}
-
-.btn-read-more:hover {
-	background-color: var(--dark-color);
-}
 
 /* ********************************** */
 /*               FOOTER               */
 /* ********************************** */
 
 .footer {
-	background-color: var(--primary-color);
+	background-color:#c7a17a;
 }
 
 .container-footer {
@@ -621,7 +509,7 @@ html {
 
 .information ul li a:hover,
 .my-account ul li a:hover {
-	color: var(--dark-color);
+	color: black;
 }
 
 .social-icons {
@@ -660,17 +548,7 @@ html {
 	background-color: #c8232c;
 }
 
-.instagram {
-	background: linear-gradient(
-		#405de6,
-		#833ab4,
-		#c13584,
-		#e1306c,
-		#fd1d1d,
-		#f56040,
-		#fcaf45
-	);
-}
+
 
 .content p {
 	font-size: 1.4rem;
@@ -727,6 +605,87 @@ html {
 	font-weight: 400;
 	font-size: 1.6rem;
 }
+/* ********************************** */
+/*      tabla integrantes             */
+/* ********************************** */
+.table-container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+ .table-container img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+/* ********************************** */
+/*      horarios                      */
+/* ********************************** */
+
+.horario-container {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.header h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.horarios {
+    display: flex;
+    flex-direction: column;
+}
+
+.day {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.day-name {
+    font-weight: bold;
+    color: #3f51b5;
+}
+
+.hours {
+    color: #666;
+}
+
+.day:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
 
 /* ********************************** */
 /*       MEDIA QUERIES -- 768px       */
